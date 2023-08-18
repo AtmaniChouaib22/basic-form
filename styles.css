@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 30% 70% ; 
+    height: 100vh;
+
+}
+.image {
+    background-image: url(assets/richard-stachmann-3jL1PhTsRPA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 20px;
+}
+.fp {
+    font-size:1.6rem;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.sp {
+    font-size: 1.3rem;
+}
+
+.form-section {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255,254,228,1) 0%, rgba(31,52,21,1) 100%);
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2 , minmax(300px , 1fr));
+    row-gap: 40px;
+    column-gap: 50px;
+
+}
+legend {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 3rem;
+}
+.box {
+    display: grid;
+}
+.box > input {
+    height: 40px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: none ;
+    border-radius: 5px;
+}
+.box > label {
+    font-size: 1.3rem;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.btn >button {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.btn > span {
+    font-size: 1.2rem;
+}
